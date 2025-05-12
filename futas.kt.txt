@@ -1,0 +1,16 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main() {
+    val listaFrutas = mutableListOf("Maçã","Banana","Laranja","Uva","Morango")
+    listaFrutas.add("Kiwi")
+    listaFrutas.remove("Uva")
+    
+    println(listaFrutas[0])
+    for(fruta in listaFrutas){
+        println(fruta)
+    }
+    var tamanho: Int = listaFrutas.size
+    println("Tamanho da lista: ${tamanho}")
+}
