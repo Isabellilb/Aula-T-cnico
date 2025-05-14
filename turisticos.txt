@@ -1,0 +1,23 @@
+fun main() {
+    // Criando uma lista imutável de pontos turísticos
+    val pontosTuristicos = listOf(
+        "Castelo Lacave",
+        "Monumento Nacional ao Imigrante",
+        "Igreja São Pelegrino",
+        "Estrada do Imigrante",
+        "Parque Getúlio Vargas",
+        "Diversas vinícolas"
+    )
+
+    // Exibindo os pontos turísticos
+    println("Pontos Turísticos em Caxias do Sul:")
+    pontosTuristicos.forEachIndexed { index, ponto ->
+        println("${index + 1}. $ponto")
+    }
+}
+
+
+
+
+ 
+
