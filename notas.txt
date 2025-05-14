@@ -1,0 +1,60 @@
+import kotlin.random.Random
+ 
+fun main() {
+
+    // Gerar 3 notas aleatórias entre 0.0 e 10.0
+
+    val nota1 = gerarNota()
+
+    val nota2 = gerarNota()
+
+    val nota3 = gerarNota()
+ 
+    println("Notas do aluno: $nota1, $nota2, $nota3")
+ 
+    // Calcular média
+
+    val media = calcularMedia(nota1, nota2, nota3)
+
+    println("Média: %.2f".format(media))
+ 
+    // Mostrar conceito com base na média
+
+    mostrarConceito(media)
+
+}
+ 
+// Função que gera uma nota aleatória entre 0.0 e 10.0
+
+fun gerarNota(): Double {
+
+    return Random.nextDouble(0.0, 10.0)
+
+}
+ 
+// Função para calcular a média de 3 notas
+
+fun calcularMedia(n1: Double, n2: Double, n3: Double): Double {
+
+    return (n1 + n2 + n3) / 3
+
+}
+ 
+// Função que mostra o conceito com base na média
+
+fun mostrarConceito(media: Double) {
+
+    when {
+
+        media >= 9.0 && media <= 10.0 -> println("Conceito: PD (Performance Destaque)")
+
+        media >= 7.0 && media < 9.0 -> println("Conceito: ED (Evolução Desejada)")
+
+        else -> println("Conceito: ND (Necessita Desenvolvimento)")
+
+    }
+
+}
+
+ 
+
