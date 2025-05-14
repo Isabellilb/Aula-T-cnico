@@ -1,0 +1,11 @@
+import kotlin.random.Random
+
+fun celsiusParaFahrenheit(celsius: Int): Double {
+    return (celsius * 9 / 5.0) + 32
+}
+
+fun main() {
+    val celsius = Random.nextInt(-10, 41) // Gera temperatura entre -10°C e 40°C
+    val fahrenheit = celsiusParaFahrenheit(celsius)
+    println("Temperatura: $celsius°C = %.2f°F".format(fahrenheit))
+}
