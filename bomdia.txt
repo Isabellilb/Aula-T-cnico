@@ -1,0 +1,15 @@
+fun bomdia() {
+    println("Bom dia")
+}
+fun bomdia1(msg:String){
+    println("Bom dia $msg")
+}
+fun bomdia2(msg:String){
+    println("Bom dia $msg")
+}
+fun main(){
+    bomdia()
+    var nome:String = "Senac"
+    bomdia1(nome)
+    println(bomdia2(nome))
+}

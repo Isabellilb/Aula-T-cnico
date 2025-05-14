@@ -1,0 +1,28 @@
+import kotlin.random.Random
+
+fun soma(a: Int, b: Int): Int {
+    return a+b
+}
+    fun subtracao(a: Int, b: Int): Int {
+    return a-b
+    }
+        fun multiplicacao(a: Int, b: Int): Int {
+    return a*b
+        }
+            fun divisao(a: Int, b: Int): Int {
+    return a/b
+}
+fun main(){
+    val n1 = Random.nextInt(1, 10)
+    val n2 = Random.nextInt(1, 10)
+    val resultado = soma(n1,n2)
+    val resultado1 = subtracao(n1,n2)
+    val resultado2 = multiplicacao(n1,n2)
+    val resultado3 = divisao(n1,n2)
+    println("Soma $n1 + $n2 = $resultado")
+    println("Substração $n1 - $n2 = $resultado1")
+    println("Multiplicação $n1 * $n2 = $resultado2")
+    println("Divisão $n1 / $n2 = $resultado3") 
+    
+    
+}
