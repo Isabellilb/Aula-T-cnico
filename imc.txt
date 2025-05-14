@@ -1,0 +1,27 @@
+fun calcularIMC(peso: Double, altura: Double): Double {
+    if (altura <= 0 || peso <= 0) {
+        throw IllegalArgumentException("Peso e altura devem ser maiores que zero.")
+    }
+    return peso / (altura * altura)
+}
+fun main() {
+    val peso = 70.0  // em kg
+    val altura = 1.75  // em metros
+
+    val imc = calcularIMC(peso, altura)
+    println("Seu IMC é: %.2f".format(imc))
+
+    when {
+        imc < 18.5 -> println("Abaixo do peso")
+        imc in 18.5..24.9 -> println("Peso normal")
+        imc in 25.0..29.9 -> println("Sobrepeso")
+        imc in 30.0..34.9 -> println("Obesidade grau I")
+        imc in 35.0..39.9 -> println("Obesidade grau II")
+        else -> println("Obesidade grau III (obesidade mórbida)")
+    }
+}
+
+
+
+ 
+
